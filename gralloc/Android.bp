@@ -39,10 +39,7 @@ cc_library_shared {
 //libgralloccore
 cc_library_shared {
     name: "libgralloccore",
-    defaults: [
-        "qtidisplay_common_defaults",
-        "qtidisplay_smmu_header_defaults"
-    ],
+    defaults: ["qtidisplay_common_defaults"],
     sanitize: {
         integer_overflow: true,
     },
